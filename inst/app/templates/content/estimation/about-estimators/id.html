@@ -1,5 +1,3 @@
-The incidence decay (ID) estimator assumes an exponential model and finds the parameters by minimizing the sum of the
-squared differences between the observed cases counts and the case counts expected based on the assumed model.
-The method assumes that the serial interval is known. This means that the user needs to input the value of the serial
-interval. The serial interval is the average time between the first infection and the time the first infected individual
-exhibits disease symptoms.  
+The Incidence Decay (ID) estimator uses the method of least squares to estimate <em>R</em><sub>0</sub>.
+This method assumes the serial interval is known, and is built under the SIR assumption.
+We note that the use of this method might result in the underestimation of <em>R</em><sub>0</sub>.
