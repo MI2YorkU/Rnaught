@@ -21,7 +21,8 @@ Two sample datasets are included: weekly Canadian COVID-19 case count data from 
 To estimate the basic reproductive number, the user can choose their preferred estimator, and if applicable, must enter the known serial interval prior to estimation.
 If multiple estimates of the basic reproductive number are calculated, they are all included in a table where each row represents an estimate.
 If multiple datasets are being considered, the basic reproductive number is estimated for all datasets and the columns of the table correspond to the different datasets uploaded into the application.
-The table also consists of a column corresponding to the value of the serial interval. 
+The table also consists of a column corresponding to the value of the [serial interval
+(SI)](https://en.wikipedia.org/wiki/Serial_interval). 
 This table can be exported as a .csv file. 
 
 In progress...
