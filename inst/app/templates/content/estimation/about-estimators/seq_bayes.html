@@ -1,1 +1,9 @@
-This is a short description of the seqB method.
+The sequential Bayes (seqB) estimator uses a Bayesian approach to estimate <em>R</em><sub>0</sub> which updates the reproductive number estimate as data accumulates over time.
+This approach is based on the SIR model, and assumes that the mean of the serial distribution (ie. the serial interval (SI)) is known.
+It is assumed that infectious counts are observed at periodic times (ie. daily, weekly).
+This method cannot handle datasets where there are no new infections observed in a time interval, thus, to remedy this, 
+some manipulation may be necessary to make the times at which infectious counts are observed sufficiently course (ie. weeks instead of days).
+Further, this method is also inappropriate in situations where long intervals between cases are observed in the initial stages of the epidemic.
+Finally, the <em>R</em><sub>0</sub> approximation behaves similarly to a branching process, which means that throughout, the population size “available” to be infected remains constant.
+We note that this assumption does not hold for the SIR/SEIR/SEAIR compartmental models.
+As such, seqB estimates should only really be considered early on in an epidemic, ie. before the inflection point of an epidemic, if the dataset being used follows these models. 
