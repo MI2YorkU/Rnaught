@@ -225,8 +225,9 @@ eval_estimator <- function(estimator, dataset) {
             max_shape = estimator$max_shape, max_scale = estimator$max_scale
           )
           estimated_mu <- round(sum(estimate$supp * estimate$pmf), 2)
-          estimate <- paste0(round(estimate$r0, 2), " (SI = ", estimated_mu,
-            " ", tolower(dataset[, 2]), ")"
+          mu_units <- if (dataset[, 2] == "Days") "day(s)" else "week(s)"
+          estimate <- paste0(
+            round(estimate$r0, 2), " (SI = ", estimated_mu, " ", mu_units, ")"
           )
         } else {
           mu <- convert_mu_units(dataset[, 2], estimator$mu_units, estimator$mu)
@@ -273,7 +274,8 @@ estimator_mu_text <- function(estimator) {
   if (is.na(estimator$mu)) {
     return("—")
   }
-  paste(estimator$mu, tolower(estimator$mu_units))
+  mu_units <- if (estimator$mu_units == "Days") "day(s)" else "week(s)"
+  paste(estimator$mu, mu_units)
 }
 
 # Render the estimates table whenever it is updated.
