@@ -1,15 +1,15 @@
 Package: Rnaught
 Type: Package
-Title: Estimate the Basic Reproduction Number of Infectious Diseases
+Title: Estimate the Basic Reproduction Number (R0) of Infectious Diseases
 Version: 0.1.0
 Authors@R: c(
+    person("Naeem", "Model", role=c("aut", "cre"), email="me@nmode.ca"),
     person("Sawitree", "Boonpatcharanon", role="aut"),
     person("Jane", "Heffernan", role="aut"),
     person("Hanna", "Jankowski", role="aut"),
-    person("Naeem", "Model", role=c("aut", "cre"), email="me@nmode.ca"))
-Description: A collection of methods for estimating the basic reproduction
-    number (R0) of infectious diseases. Optionally available as a web
-    application using the 'shiny' framework.
+    person("Tatiana", "Krikella", role="ctb"))
+Description: An R package and web application for estimating the basic
+    reproduction number (R0) of infectious diseases.
 License: AGPL (>= 3)
 URL: https://MI2YorkU.github.io/Rnaught, https://github.com/MI2YorkU/Rnaught
 BugReports: https://github.com/MI2YorkU/Rnaught/issues
@@ -19,8 +19,8 @@ Imports:
 Suggests: 
     knitr,
     rmarkdown,
-    bslib,
     shiny,
+    bslib,
     DT,
     plotly
 Encoding: UTF-8
