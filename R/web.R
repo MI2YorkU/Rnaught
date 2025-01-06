@@ -1,16 +1,34 @@
 #' Launch the Rnaught Web Application
 #'
+#' This is the entry point of the Rnaught web application, which creates and
+#' returns a Shiny app object. When invoked directly, the web application is
+#' launched.
+#'
+#' The following dependencies are required to run the application:
+#'   * [shiny](https://shiny.posit.co)
+#'   * [bslib](https://rstudio.github.io/bslib)
+#'   * [DT](https://rstudio.github.io/DT)
+#'   * [plotly](https://plotly-r.com)
+#'
+#' If any of the above packages are missing during launch, a prompt will appear
+#' to install them.
+#'
+#' To configure settings such as the port, host or default browser, set Shiny's
+#' global options (see [shiny::runApp()]).
+#'
+#' @return A Shiny app object for the Rnaught web application.
+#'
 #' @importFrom utils install.packages
 #'
 #' @export
-app <- function() {
+web <- function() {
   missing_pkgs <- c()
   # Check for any missing, required packages.
-  if (!requireNamespace("bslib", quietly = TRUE)) {
-    missing_pkgs <- c(missing_pkgs, "bslib")
-  }
   if (!requireNamespace("shiny", quietly = TRUE)) {
     missing_pkgs <- c(missing_pkgs, "shiny")
+  }
+  if (!requireNamespace("bslib", quietly = TRUE)) {
+    missing_pkgs <- c(missing_pkgs, "bslib")
   }
   if (!requireNamespace("DT", quietly = TRUE)) {
     missing_pkgs <- c(missing_pkgs, "DT")
@@ -35,5 +53,5 @@ app <- function() {
     }
   }
 
-  shiny::runApp(appDir = system.file("app", package = "Rnaught"))
+  shiny::shinyAppDir(appDir = system.file("web", package = "Rnaught"))
 }
