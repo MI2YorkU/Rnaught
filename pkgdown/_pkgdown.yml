@@ -1,0 +1,17 @@
+url: https://MI2YorkU.github.io/Rnaught
+template:
+  bootstrap: 5
+reference:
+- title: "Estimators"
+  contents:
+  - id
+  - idea
+  - seq_bayes
+  - wp
+- title: "Web Application"
+  contents:
+  - web
+- title: "Datasets"
+  contents:
+  - COVIDCanada
+  - COVIDCanadaPT
