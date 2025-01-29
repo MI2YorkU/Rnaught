@@ -13,6 +13,10 @@ knitr::opts_chunk$set(
 
 # Rnaught <a href="https://MI2YorkU.github.io/Rnaught"><img src="man/figures/logo.svg" align="right" height="139" alt="Rnaught Logo"></a>
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/MI2YorkU/Rnaught/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MI2YorkU/Rnaught/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 Rnaught is an R package and web application for estimating the
 [basic reproduction number (*R*<sub>0</sub>)](
 https://en.wikipedia.org/wiki/Basic_reproduction_number) of infectious diseases.
