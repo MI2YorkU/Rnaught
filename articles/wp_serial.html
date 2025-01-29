@@ -6,6 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>White and Pagano: Utilizing the Serial Distribution • Rnaught</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
@@ -29,6 +35,7 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
+<li class="nav-item"><a class="nav-link" href="../articles/Rnaught.html">Get started</a></li>
 <li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="active nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
@@ -70,16 +77,16 @@ symptomatic, to when another individual who is infected by the infector
 becomes symptomatic. The serial interval refers to a range of likely
 values from this distribution, although it is typically reported as the
 mean.</p>
-<p>In the White and Pagano method, the serial distribution is assumed to
-be a discretized, finite version of a gamma distribution. Setting the
-parameter <code>serial</code> to <code>TRUE</code> causes this
-discretized distribution to be returned in addition to the estimate of
-R0. Furthermore, the method can be used whether or not the serial
-interval (specified as the parameter <code>mu</code>) is known. When
-<code>mu</code> is specified, it is taken to be the mean of a continuous
-gamma distribution (i.e., before the discretization). As such, the mean
-computed from the returned serial distribution may differ slightly from
-<code>mu</code>:</p>
+<p>In the White and Pagano method, <code><a href="../reference/wp.html">wp()</a></code>, the serial
+distribution is assumed to be a discretized, finite version of a gamma
+distribution. Setting the parameter <code>serial</code> to
+<code>TRUE</code> causes this discretized distribution to be returned in
+addition to the estimate of R0. Furthermore, the method can be used
+whether or not the serial interval (specified as the parameter
+<code>mu</code>) is known. When <code>mu</code> is specified, it is
+taken to be the mean of a continuous gamma distribution (i.e., before
+the discretization). As such, the mean computed from the returned serial
+distribution may differ slightly from <code>mu</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Case counts.</span></span>
 <span><span class="va">cases</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">4</span>, <span class="fl">10</span>, <span class="fl">5</span>, <span class="fl">3</span>, <span class="fl">4</span>, <span class="fl">19</span>, <span class="fl">3</span>, <span class="fl">3</span>, <span class="fl">14</span>, <span class="fl">4</span><span class="op">)</span></span>
