@@ -19,10 +19,11 @@ library(Rnaught)
 ```
 
 In the Sequential Bayes method, the probability distribution of R0 is updated
-sequentially from one case count to the next, starting from a (discretized) uniform prior. By
-default, the function `seq_bayes` returns the mean of the last updated posterior
-distribution as its estimate of R0. However, by setting the parameter `post` to
-`TRUE`, it is possible to return the final distribution itself:
+sequentially from one case count to the next, starting from a (discretized)
+uniform prior. By default, the function `seq_bayes()` returns the mean of the
+last updated posterior distribution as its estimate of R0. However, by setting
+the parameter `post` to `TRUE`, it is possible to return the final distribution
+itself:
 
 ```{r}
 # Daily case counts.

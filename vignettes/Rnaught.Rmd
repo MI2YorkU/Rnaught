@@ -1,0 +1,86 @@
+---
+title: "Introduction to Rnaught"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Rnaught}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The goal of Rnaught is to provide a a collection of methods for estimating the
+[basic reproduction number](
+https://en.wikipedia.org/wiki/Basic_reproduction_number) ($R_0$) of infectious
+diseases.
+
+
+## Estimators
+
+The following estimators are currently available: 
+
+  * `id()`: Incidence Decay (ID)
+  * `idea()`: Incidence Decay and Exponential Adjustment (IDEA)
+  * `seq_bayes()`: Sequential Bayes (seqB)
+  * `wp()`: White and Pagano (WP)
+
+Every estimator employs its own model, has its own set of parameters, and is
+better suited to particular scenarios. You should consult each method's
+documentation for technical details. Below is a short example computing
+estimates for a given set of case counts.
+
+```{r}
+library(Rnaught)
+
+# Weekly case counts.
+cases <- c(1, 4, 10, 5, 3, 4, 19, 3, 3, 14, 4)
+
+# Compute estimates of R0, assuming a serial interval of five days.
+mu <- 5 / 7
+
+id(cases, mu)
+idea(cases, mu)
+seq_bayes(cases, mu)
+wp(cases, mu)
+```
+
+
+## Web Application
+
+This serves as a graphical interface for the package. An instance is available
+at <https://immune.math.yorku.ca/Rnaught>. It can also be run locally by
+invoking the `web()` function.
+
+Datasets can be uploaded as a CSV file, or entered manually. The data is
+visualized in the application through plots that show the case counts (either
+daily or weekly). If multiple datasets are added, the trends corresponding to
+these datasets are populated in the same plot. This plot can be exported as a
+PNG image. Furthermore, the datasets entered can be exported as a CSV.
+
+Two sample datasets are included: weekly Canadian COVID-19 case count data from
+March 3rd, 2020 to March 31st, 2020, and weekly Ontario COVID-19 case count data
+from March 3rd, 2020 to March 31st, 2020.
+
+To estimate the basic reproductive number, the user can choose their preferred
+estimator, and if applicable, must enter the known
+[serial interval](https://en.wikipedia.org/wiki/Serial_interval) prior to
+estimation. If multiple estimates of the basic reproductive number are
+calculated, they are all included in a table where each row represents an
+estimate. If multiple datasets are being considered, the basic reproduction
+number is estimated for all datasets and the columns of the table correspond to
+the different datasets. The table also consists of a column corresponding to the
+value of the serial interval. This table can also be exported as a CSV.
+
+
+## Datasets
+
+The package includes two datasets provided by the [COVID-19 Canada Open Data
+Working Group](https://github.com/ccodwg/CovidTimelineCanada).
+These report the national and provincial case counts of COVID-19 in Canada. For
+details, see `?COVIDCanada` and `?COVIDCanadaPT`. They are also available as
+[CSV files](https://github.com/MI2YorkU/Rnaught/tree/master/inst/extdata).

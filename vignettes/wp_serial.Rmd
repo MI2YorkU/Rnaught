@@ -24,8 +24,8 @@ when another individual who is infected by the infector becomes symptomatic. The
 serial interval refers to a range of likely values from this distribution,
 although it is typically reported as the mean.
 
-In the White and Pagano method, the serial distribution is assumed to be a
-discretized, finite version of a gamma distribution. Setting the parameter
+In the White and Pagano method, `wp()`, the serial distribution is assumed to be
+a discretized, finite version of a gamma distribution. Setting the parameter
 `serial` to `TRUE` causes this discretized distribution to be returned in
 addition to the estimate of R0. Furthermore, the method can be used whether or
 not the serial interval (specified as the parameter `mu`) is known. When `mu` is
