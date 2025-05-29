@@ -1,11 +1,11 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
+pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   Rnaught: Rnaught.html
   seq_bayes_post: seq_bayes_post.html
   wp_serial: wp_serial.html
-last_built: 2025-01-29T02:00Z
+last_built: 2025-05-29T16:48Z
 urls:
   reference: https://MI2YorkU.github.io/Rnaught/reference
   article: https://MI2YorkU.github.io/Rnaught/articles
