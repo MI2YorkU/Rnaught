@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-The goal of Rnaught is to provide a a collection of methods for estimating the
+The goal of Rnaught is to provide a collection of methods for estimating the
 [basic reproduction number](
 https://en.wikipedia.org/wiki/Basic_reproduction_number) ($R_0$) of infectious
 diseases.
