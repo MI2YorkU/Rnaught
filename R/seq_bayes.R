@@ -103,17 +103,13 @@ seq_bayes <- function(cases, mu, kappa = 20, post = FALSE) {
     )
   }
 
-  if (any(cases == 0)) {
-    times <- which(cases > 0)
-    if (length(times) < 2) {
-      stop("Case counts must contain at least two positive integers.",
-        call. = FALSE
-      )
-    }
-    cases <- cases[times]
-  } else {
-    times <- seq_along(cases)
+  times <- which(cases > 0)
+  if (length(times) < 2) {
+    stop("Case counts must contain at least two positive integers.",
+      call. = FALSE
+    )
   }
+  cases <- cases[times]
 
   support <- seq(0, kappa, 0.01)
   tau <- diff(times)
