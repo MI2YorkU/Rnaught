@@ -7,7 +7,7 @@ Authors@R: c(
     person("Sawitree", "Boonpatcharanon", role="aut"),
     person("Jane", "Heffernan", role="aut"),
     person("Hanna", "Jankowski", role="aut"),
-    person("Tatiana", "Krikella", role="ctb"))
+    person("Tatiana", "Krikella", role="aut"))
 Description: An R package and web application for estimating the basic
     reproduction number (R0) of infectious diseases.
 License: AGPL (>= 3)
