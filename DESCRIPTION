@@ -1,15 +1,22 @@
 Package: Rnaught
 Type: Package
-Title: Estimate the Basic Reproduction Number (R0) of Infectious Diseases
+Title: Estimate the Basic Reproduction Number (R0)
 Version: 0.1.0
 Authors@R: c(
-    person("Naeem", "Model", role=c("aut", "cre"), email="me@nmode.ca"),
-    person("Sawitree", "Boonpatcharanon", role="aut"),
-    person("Jane", "Heffernan", role="aut"),
-    person("Hanna", "Jankowski", role="aut"),
-    person("Tatiana", "Krikella", role="aut"))
-Description: An R package and web application for estimating the basic
-    reproduction number (R0) of infectious diseases.
+    person("Naeem", "Model", role=c("aut", "cph", "cre"), email="me@nmode.ca"),
+    person("Sawitree", "Boonpatcharanon", role=c("aut", "cph")),
+    person("Jane", "Heffernan", role=c("aut", "cph")),
+    person("Hanna", "Jankowski", role=c("aut", "cph")),
+    person("Tatiana", "Krikella", role=c("aut", "cph")),
+    person("Kseniia", "Lipikhin", role=c("ctb", "cph")))
+Description: A collection of methods for estimating the basic reproduction
+    number (R0) of infectious diseases. Features a web application to interface
+    with the estimators. Uses the models from:
+        Fisman et al. (2013) <DOI:10.1371/journal.pone.0083622>,
+        Bettencourt and Riberio (2008) <DOI:10.1371/journal.pone.0002185>, and
+        White and Pagano (2008) <DOI:10.1002/sim.3136>.
+    Includes datasets for Canadian national and provincial COVID-19 case counts
+    provided by Berry et al. (2021) <DOI:10.1038/s41597-021-00955-2>.
 License: AGPL (>= 3)
 URL: https://MI2YorkU.github.io/Rnaught, https://github.com/MI2YorkU/Rnaught
 BugReports: https://github.com/MI2YorkU/Rnaught/issues

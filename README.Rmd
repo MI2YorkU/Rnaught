@@ -64,6 +64,9 @@ Submit new estimators, features, bug fixes, or patches by creating a
 
 ## License
 
+Copyright © 2022 - 2025 [Rnaught contributors](
+https://github.com/MI2YorkU/Rnaught/graphs/contributors)
+
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU Affero General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your option) any
