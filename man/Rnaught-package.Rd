@@ -4,9 +4,9 @@
 \name{Rnaught-package}
 \alias{Rnaught}
 \alias{Rnaught-package}
-\title{Rnaught: Estimate the Basic Reproduction Number (R0) of Infectious Diseases}
+\title{Rnaught: Estimate the Basic Reproduction Number (R0)}
 \description{
-An R package and web application for estimating the basic reproduction number (R0) of infectious diseases.
+A collection of methods for estimating the basic reproduction number (R0) of infectious diseases. Features a web application to interface with the estimators. Uses the models from: Fisman et al. (2013) \doi{10.1371/journal.pone.0083622}, Bettencourt and Riberio (2008) \doi{10.1371/journal.pone.0002185}, and White and Pagano (2008) \doi{10.1002/sim.3136}. Includes datasets for Canadian national and provincial COVID-19 case counts provided by Berry et al. (2021) \doi{10.1038/s41597-021-00955-2}.
 }
 \seealso{
 Useful links:
@@ -18,18 +18,19 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Naeem Model \email{me@nmode.ca}
+\strong{Maintainer}: Naeem Model \email{me@nmode.ca} [copyright holder]
 
 Authors:
 \itemize{
-  \item Sawitree Boonpatcharanon
-  \item Jane Heffernan
-  \item Hanna Jankowski
+  \item Sawitree Boonpatcharanon [copyright holder]
+  \item Jane Heffernan [copyright holder]
+  \item Hanna Jankowski [copyright holder]
+  \item Tatiana Krikella [copyright holder]
 }
 
 Other contributors:
 \itemize{
-  \item Tatiana Krikella [contributor]
+  \item Kseniia Lipikhin [contributor, copyright holder]
 }
 
 }
