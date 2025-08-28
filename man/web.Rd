@@ -18,8 +18,8 @@ launched.
 The following dependencies are required to run the application:
 \itemize{
 \item \href{https://shiny.posit.co}{shiny}
-\item \href{https://rstudio.github.io/bslib}{bslib}
-\item \href{https://rstudio.github.io/DT}{DT}
+\item \href{https://rstudio.github.io/bslib/}{bslib}
+\item \href{https://rstudio.github.io/DT/}{DT}
 \item \href{https://plotly-r.com}{plotly}
 }
 

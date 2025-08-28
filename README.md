@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file. -->
 
-# Rnaught <a href="https://MI2YorkU.github.io/Rnaught"><img src="man/figures/logo.svg" align="right" height="139" alt="Rnaught Logo"></a>
+# Rnaught <a href="https://mi2yorku.github.io/Rnaught/"><img src="man/figures/logo.svg" align="right" height="139" alt="Rnaught Logo"></a>
 
 <!-- badges: start -->
 
@@ -18,9 +18,13 @@ An instance of the web application is available at
 
 ## Installation
 
-You can install the development version of Rnaught using the
-[devtools](https://devtools.r-lib.org) package. Run the following
-commands in an R session:
+### Latest CRAN release
+
+``` r
+install.packages("Rnaught")
+```
+
+### Development version
 
 ``` r
 install.packages("devtools") # If not already installed.
@@ -30,10 +34,10 @@ devtools::install_github("MI2YorkU/Rnaught", build_vignettes = TRUE)
 ## Documentation
 
 The package documentation is available online at
-<https://MI2YorkU.github.io/Rnaught>.
+<https://mi2yorku.github.io/Rnaught/>.
 
 For a quick introduction, see the [Get
-started](https://MI2YorkU.github.io/Rnaught/articles/Rnaught.html) page.
+started](https://mi2yorku.github.io/Rnaught/articles/Rnaught.html) page.
 This can also be accessed from an R session with
 `vignette("Rnaught", package = "Rnaught")`.
 
@@ -68,4 +72,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero
 General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
-along with this program. If not, see <https://www.gnu.org/licenses>.
+along with this program. If not, see <https://www.gnu.org/licenses/>.

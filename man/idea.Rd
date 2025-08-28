@@ -47,7 +47,8 @@ idea(cases, mu = 5 / 7)
 idea(cases, mu = 3 / 7)
 }
 \references{
-\href{https://doi.org/10.1371/journal.pone.0083622}{Fisman et al. (PloS One, 2013)}
+Fisman et al. (PloS One, 2013)
+\doi{doi:10.1371/journal.pone.0083622}
 }
 \seealso{
 \code{\link[=id]{id()}} for a similar method.

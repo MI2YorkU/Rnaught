@@ -125,7 +125,8 @@ estimate$supp
 estimate$pmf
 }
 \references{
-\href{https://doi.org/10.1002/sim.3136}{White and Pagano (Statistics in Medicine, 2008)}
+White and Pagano (Statistics in Medicine, 2008)
+\doi{doi:10.1002/sim.3136}
 }
 \seealso{
 \code{vignette("wp_serial", package="Rnaught")} for examples of using the

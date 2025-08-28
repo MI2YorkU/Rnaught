@@ -58,7 +58,7 @@ containing the uniform prior, final posterior distribution, posterior mean and
 posterior mode:
 
 ```{r, dpi = 192, echo = FALSE}
-par(mar = c(4.1, 4.1, 0.5, 0.5))
+old_par <- par(mar = c(4.1, 4.1, 0.5, 0.5))
 
 # Posterior.
 plot(posterior$supp, posterior$pmf, xlab = "x", ylab = "p(x)",
@@ -78,4 +78,6 @@ legend("topright",
   col = c("orange", "black", "blue", "red"),
   lty = c(1, 1, 2, 2), cex = 0.5
 )
+
+par(old_par)
 ```

@@ -72,7 +72,7 @@ well as its mean and median, which could be used as estimates of the serial
 interval:
 
 ```{r, dpi = 192, echo = FALSE}
-par(mar = c(4.1, 4.1, 0.5, 0.5))
+old_par <- par(mar = c(4.1, 4.1, 0.5, 0.5))
 
 # Serial distribution.
 plot(estimate$supp, estimate$pmf, xlab = "x", ylab = "p(x)",
@@ -89,4 +89,6 @@ legend("topright",
   col = c("black", "blue", "red"),
   lty = c(1, 2, 2), cex = 0.5
 )
+
+par(old_par)
 ```

@@ -39,7 +39,7 @@ posterior mean).
 }
 \description{
 This function implements a sequential Bayesian estimation method of R0 due to
-Bettencourt and Riberio (PloS One, 2008). See details for important
+Bettencourt and Ribeiro (PloS One, 2008). See details for important
 implementation notes.
 }
 \details{
@@ -92,7 +92,8 @@ posterior$pmf
 estimate == sum(posterior$supp * posterior$pmf)
 }
 \references{
-\href{https://doi.org/10.1371/journal.pone.0002185}{Bettencourt and Riberio (PloS One, 2008)}
+Bettencourt and Ribeiro (PloS One, 2008)
+\doi{doi:10.1371/journal.pone.0002185}
 }
 \seealso{
 \code{vignette("seq_bayes_post", package = "Rnaught")} for examples of

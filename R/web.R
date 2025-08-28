@@ -24,8 +24,8 @@
 #'
 #' The following dependencies are required to run the application:
 #'   * [shiny](https://shiny.posit.co)
-#'   * [bslib](https://rstudio.github.io/bslib)
-#'   * [DT](https://rstudio.github.io/DT)
+#'   * [bslib](https://rstudio.github.io/bslib/)
+#'   * [DT](https://rstudio.github.io/DT/)
 #'   * [plotly](https://plotly-r.com)
 #'
 #' If any of the above packages are missing during launch, a prompt will appear

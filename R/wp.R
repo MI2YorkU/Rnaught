@@ -90,8 +90,8 @@
 #'   Otherwise, if `serial` is identical to `FALSE`, only the estimate of R0 is
 #'   returned.
 #'
-#' @references [White and Pagano (Statistics in Medicine, 2008)](
-#'   https://doi.org/10.1002/sim.3136)
+#' @references White and Pagano (Statistics in Medicine, 2008)
+#'   \doi{doi:10.1002/sim.3136}
 #'
 #' @seealso `vignette("wp_serial", package="Rnaught")` for examples of using the
 #'   serial distribution.
@@ -203,8 +203,8 @@ wp <- function(cases, mu = NA, serial = FALSE,
 #'   * `pmf` - the probability mass function of the estimated serial
 #'     distribution
 #'
-#' @references [White and Pagano (Statistics in Medicine, 2008)](
-#'   https://doi.org/10.1002/sim.3136)
+#' @references White and Pagano (Statistics in Medicine, 2008)
+#'   \doi{doi:10.1002/sim.3136}
 #'
 #' @seealso [wp()] for the function in which this grid search is called.
 #'
@@ -257,8 +257,8 @@ wp_search <- function(cases, grid_length, max_shape, max_scale) {
 #'
 #' @return The sum inside the function `mu(t)` of the log likelihood.
 #'
-#' @references [White and Pagano (Statistics in Medicine, 2008)](
-#'   https://doi.org/10.1002/sim.3136)
+#' @references White and Pagano (Statistics in Medicine, 2008)
+#'   \doi{doi:10.1002/sim.3136}
 #'
 #' @seealso [wp()] and [wp_search()] for the functions which require this sum.
 #'

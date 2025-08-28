@@ -6,12 +6,12 @@
 \alias{Rnaught-package}
 \title{Rnaught: Estimate the Basic Reproduction Number (R0)}
 \description{
-A collection of methods for estimating the basic reproduction number (R0) of infectious diseases. Features a web application to interface with the estimators. Uses the models from: Fisman et al. (2013) \doi{10.1371/journal.pone.0083622}, Bettencourt and Riberio (2008) \doi{10.1371/journal.pone.0002185}, and White and Pagano (2008) \doi{10.1002/sim.3136}. Includes datasets for Canadian national and provincial COVID-19 case counts provided by Berry et al. (2021) \doi{10.1038/s41597-021-00955-2}.
+A collection of methods for estimating the basic reproduction number (R0) of infectious diseases. Features a web application to interface with the estimators. Uses the models from: Fisman et al. (2013) \doi{10.1371/journal.pone.0083622}, Bettencourt and Ribeiro (2008) \doi{10.1371/journal.pone.0002185}, and White and Pagano (2008) \doi{10.1002/sim.3136}. Includes datasets for Canadian national and provincial COVID-19 case counts provided by Berry et al. (2021) \doi{10.1038/s41597-021-00955-2}.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://MI2YorkU.github.io/Rnaught}
+  \item \url{https://mi2yorku.github.io/Rnaught/}
   \item \url{https://github.com/MI2YorkU/Rnaught}
   \item Report bugs at \url{https://github.com/MI2YorkU/Rnaught/issues}
 }
