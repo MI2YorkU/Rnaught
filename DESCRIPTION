@@ -1,7 +1,7 @@
 Package: Rnaught
 Type: Package
 Title: Estimate the Basic Reproduction Number (R0)
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: c(
     person("Naeem", "Model", role=c("aut", "cph", "cre"), email="me@nmode.ca"),
     person("Sawitree", "Boonpatcharanon", role=c("aut", "cph")),
