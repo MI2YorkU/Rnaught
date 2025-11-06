@@ -30,7 +30,7 @@ render_plot <- function(input, output, react_values, time_units) {
       which(react_values$data_table[["Time units"]] == time_units),
     ]
 
-    data_plot <- plotly::plot_ly(type = "scatter", mode = "lines")
+    data_plot <- plotly::plot_ly(type = "scatter", mode = "lines+markers")
     if (nrow(datasets) > 0) {
       for (i in seq_len(nrow(datasets))) {
         counts <- tokenize_counts(datasets[i, 3])
