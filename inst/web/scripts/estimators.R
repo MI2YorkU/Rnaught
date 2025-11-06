@@ -225,9 +225,11 @@ eval_estimator <- function(estimator, dataset) {
             max_shape = estimator$max_shape, max_scale = estimator$max_scale
           )
           estimated_mu <- round(sum(estimate$supp * estimate$pmf), 2)
-          mu_units <- if (dataset[, 2] == "Days") "day(s)" else "week(s)"
-          estimate <- paste0(
-            round(estimate$r0, 2), " (SI = ", estimated_mu, " ", mu_units, ")"
+          if (dataset[, 2] == "Weeks") {
+            estimated_mu <- estimated_mu * 7
+          }
+          estimate <- paste(
+            round(estimate$r0, 2), "(SI =", estimated_mu, "day(s))"
           )
         } else {
           mu <- convert_mu_units(dataset[, 2], estimator$mu_units, estimator$mu)
